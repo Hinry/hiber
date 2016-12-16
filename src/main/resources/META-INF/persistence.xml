@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="product-unit" transaction-type="RESOURCE_LOCAL">
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL82Dialect" />
+
+            <property name="current_session_context_class" value="thread" />
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+            <property name="hibernate.connection.username" value="postgre1" />
+            <property name="hibernate.connection.password" value="1111" />
+            <property name="hibernate.connection.url" value="jdbc:postgresql://127.0.0.1:5432/mydb" />
+            <property name="show.sql" value="true" />
+        </properties>
+    </persistence-unit>
+</persistence>
